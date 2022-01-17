@@ -1,0 +1,15 @@
+﻿TuloHaastavatTest aloitti istunnon  03-01-2022  04:55:10
+TuloHaastavatTest vallitsi kertolaskut  03-01-2022 04:55:13
+TuloHaastavatTest valitsi haastavat kertolaskut  03-01-2022 04:55:15
+Vastattu: 32 * 3 = 66. Oikea vastaus: 96
+Vastattu: 31 * 8 = 645. Oikea vastaus: 248
+Vastattu: 78 * 7 = 654. Oikea vastaus: 546
+Vastattu: 84 * 8 = 672
+Vastattu: 90 * 2 = 180
+Vastattu: 80 * 9 = 541. Oikea vastaus: 720
+Vastattu: 100 * 3 = 654. Oikea vastaus: 300
+Vastattu: 88 * 8 = 654. Oikea vastaus: 704
+Vastattu: 99 * 9 = 34. Oikea vastaus: 891
+Vastattu: 49 * 6 = 31. Oikea vastaus: 294
+Tulos:2 / 10 oikein.
+TuloHaastavatTest istunto loppui:  03-01-2022 04:55:54

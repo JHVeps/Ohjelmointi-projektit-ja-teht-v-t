@@ -1,0 +1,12 @@
+MatikkaBot
+
+Toiminnot
+
+    - kyselee yhteen-, vähennys- tai kertolaskuja käyttäjän valinnan mukaan
+    - lokittaa tiedot toiminnoista ja tallentaa lokitiedot txt-tiedostoon
+    - tallentaa istunnon käyttäjän, kysymysten ja vastausten tiedot excel taulukkoon
+    - 10/10 oikein vastauksista pakinnoksi youtube video (selainautomaatio)
+
+Kohderyhmä / yhteisö kenelle MatikkaBot on suunnattu
+
+    - esikoululaiset / alakoululaiset jotka haluavat harjoitella yksinkertaisia matikan tehtäviä 

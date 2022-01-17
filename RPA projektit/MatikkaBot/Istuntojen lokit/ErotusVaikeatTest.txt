@@ -1,0 +1,15 @@
+﻿ErotusVaikeatTest aloitti istunnon  03-01-2022  04:51:52
+ErotusVaikeatTest vallitsi vähennyslaskut  03-01-2022 04:51:55
+ErotusVaikeatTest valitsi vaikeat vähennyslaskut  03-01-2022 04:51:58
+Vastattu: 596 - 311 = 285
+Vastattu: 53 - 353 = 45. Oikea vastaus: -300
+Vastattu: 458 - 758 = 564. Oikea vastaus: -300
+Vastattu: 244 - 544 = 546. Oikea vastaus: -300
+Vastattu: 251 - 1000 = 564. Oikea vastaus: -749
+Vastattu: 159 - 573 = 654. Oikea vastaus: -414
+Vastattu: 647 - 696 = 654. Oikea vastaus: -49
+Vastattu: 654 - 954 = 564. Oikea vastaus: -300
+Vastattu: 367 - 667 = 64. Oikea vastaus: -300
+Vastattu: 625 - 674 = 654. Oikea vastaus: -49
+Tulos:1 / 10 oikein.
+ErotusVaikeatTest istunto loppui:  03-01-2022 04:52:38

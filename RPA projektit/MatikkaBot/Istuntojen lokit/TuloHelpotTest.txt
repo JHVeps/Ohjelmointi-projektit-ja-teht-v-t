@@ -1,0 +1,15 @@
+﻿TuloHelpotTest aloitti istunnon  03-01-2022  04:53:37
+TuloHelpotTest vallitsi kertolaskut  03-01-2022 04:53:42
+TuloHelpotTest valitsi helpot kertolaskut  03-01-2022 04:53:43
+Vastattu: 7 * 5 = 35
+Vastattu: 6 * 7 = 42
+Vastattu: 6 * 8 = 40. Oikea vastaus: 48
+Vastattu: 2 * 2 = 4
+Vastattu: 7 * 7 = 49
+Vastattu: 7 * 4 = 28
+Vastattu: 3 * 8 = 24
+Vastattu: 8 * 8 = 64
+Vastattu: 8 * 9 = 72
+Vastattu: 8 * 9 = 72
+Tulos:9 / 10 oikein.
+TuloHelpotTest istunto loppui:  03-01-2022 04:54:31

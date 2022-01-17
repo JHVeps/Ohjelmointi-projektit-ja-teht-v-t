@@ -1,0 +1,15 @@
+﻿HaastavatSumTest3 aloitti istunnon  03-01-2022  04:43:10
+HaastavatSumTest3 vallitsi yhteenlaskut  03-01-2022 04:43:13
+HaastavatSumTest3 valitsi haastavat yhteenlaskut  03-01-2022 04:43:15
+Vastattu: 19 + 56 = 75
+Vastattu: 9 + 9 = 18
+Vastattu: 9 + 44 = 53
+Vastattu: 17 + 85 = 354. Oikea vastaus: 102
+Vastattu: 11 + 18 = 354. Oikea vastaus: 29
+Vastattu: 18 + 88 = 435. Oikea vastaus: 106
+Vastattu: 11 + 16 = 354. Oikea vastaus: 27
+Vastattu: 3 + 13 = 354. Oikea vastaus: 16
+Vastattu: 1 + 2 = 354. Oikea vastaus: 3
+Vastattu: 16 + 77 = 534. Oikea vastaus: 93
+Tulos:3 / 10 oikein.
+HaastavatSumTest3 istunto loppui:  03-01-2022 04:43:51

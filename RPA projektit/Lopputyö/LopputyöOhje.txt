@@ -1,0 +1,45 @@
+Loppuharjoitus
+Loppuharjoituksen arviointikriteerit
+
+Lähtökohtaisesti toteutetaan UiPath -ohjelmistorobotti, mutta osaamisen mukaan myös muut alustat ovat vapaasti käytettävissä. Laajuus projektilla on n. 1½op = 40h.
+Dokumentaatio
+
+Harjoitus arvioidaan puhtaasti palautetun dokumentin pohjalta. Pohjana käytetään kunkin ammattikorkeakoulun opinnäytetyöpohjaa tai
+vaihtoehtoisesti ao. raporttimallipohjaa. Dokumenttia arvioidessa kiinnitetään erityistä arvioita seuraaviin kohtiin seuraavista näkökulmista:
+
+    Opintojakso on tarkoitettu kaikille, joten odotettu lähtötaso on aivan alkeet yhdistettynä opintojakson sisältöön ja tavoitteisiin
+    Dokumentissa on käytetty tarvittaessa kuvitusta robotin toiminnasta
+    Käytetyt lähteet on luetteloitu ja niihin on tekstissä viitattu
+    Robotti soveltuu lähtökohtaisesti yhteisön käyttöön, toissijaisesti vain tekijän käyttöön
+    Teknisestä toteutuksesta saa toki lisäpisteitä vaikkakin opintojakson sisältö on odotusarvona
+    Dokumentin viimeinen osa "Huomioita ja ajatuksia projektista" on päiväkirjamainen osa omasta ajattelusta/oppimisesta projektin aikana. Omia ja rehellisiä ajatuksia arvostetaan!
+
+Aikataulu
+
+Loppuharjoitus on palautettava sunnuntaihin 9.1.2022 klo 23.59 mennessä. Myöhästyneitä palautuksia ei oteta vastaan joten kurssisuoritusta voi täydentää seuraavassa Ohjelmistorobotiikka 5op -toteutuksessa.
+Aiheet ja vaatimukset
+
+Aiheen voi valita itse (voi olla "kuvitteellinenkin" tapaus), huomioiden ao vaatimukset:
+
+    Robotissa on sovellettu laajasti opintojaksolla esitettyjä tekniikoita.
+    Omista (aktiviteettien) kokeiluista ja käyttöönotoista plussaa!
+    Aktiviteetit on nimetti selkeästi käyttötarkoituksensa mukaisesti.
+    Käytetyt muuttujat, argumentit ja tietorakenteet on nimetty käyttötarkoituksensa mukaisesti.
+    Tekeminen dokumentoidaan ja testaamiseen / debuggaamiseen kiinnitetään erityistä huomiota. Tämä tekeminen dokumentoidaa huolellisesti.
+    Robotti hajautetaan vähintään kahdeksi robotiksi. Argumentteja käytetään tiedonvaihdossa.
+    Data Table on tietorakenteena järjestelmässä.
+    Lokitietoa tallennetaan aina tarvittaessa (lokitiedot ja/tai tiedosto ja/tai Excel)
+    Tiedostoja/ulkopuolisia lähteitä käytettäessä käytetään Try-Catch -rakennetta.
+    Jos pystyy, Orchestratoria voi käyttää robotin ajamiseen esim. ajastettuna. Ei kuitenkaan ole vaatimuksena.
+    Robotti ei voi olla suoraan mitään, mitä on opintojaksolla tehty.
+
+Esimerkkiprojekteja:
+
+Projektin aihe on pääsääntöisesti oma ja yhteisön (esim. yrityksen tai yhdistyksen) käyttöön suunniteltu. Jos ei keksi mitään, voisi näistä löytyä aihe:
+
+    Tiedon hakeminen (jonkin kriteeristön mukaan) useista yrityksen järjestelmistä ja tuottaminen yhdeksi dokumentiksi
+    Tiketöintijärjestelmä
+    Tiedon kerääminen nettilähteistä ja koostaminen
+    Hälytysjärjestelmä perustuen useisiin lähteisiin
+    Tulevan työpäivän valmistelurobotti (kalenteri, muistiot, muut työkalut)
+    ...jne jne...

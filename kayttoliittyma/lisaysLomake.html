@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>sanan lisääminen</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $('[name="Submit"]').click(function () {
+          //tähän omaa koodia
+          $.ajax({
+            url: "http://localhost:8000/words/",
+            type: "POST",
+            dataType: "json",
+            data: $("#form").serialize(),
+            success: function (result) {
+              console.log(result);
+              document.getElementById("fi").value = ""; //Lisäyksen jälkeen kentät tyhjiksi
+              document.getElementById("en").value = "";
+            },
+            error: function (xhr, resp, text) {
+              console.log(xhr, resp, text);
+            },
+          });
+        });
+      });
+    </script>
+  </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sanakirja etusivu</title>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div id="container">
+      <div id="header">
+    <a id="highlight"href="./index.html">Takaisin</a>
+    <h1>Uuden sanan lisääminen sanakirjaan</h1>
+    <h2>suomi - englanti</h2>
+  </div>  
+  <div id="nav">
+    <form id="form" name="form">
+      <td>
+        <input
+          name="fi"
+          id="fi"
+          type="text"
+          value=""
+          maxlength="35"
+          size="35"
+        />
+      </td>
+      <td>
+        <input
+          name="en"
+          id="en"
+          type="text"
+          value=""
+          maxlength="35"
+          size="35"
+        />
+      </td>
+
+      <td>
+        <input id="button" name="Submit" type="button" value="Tallenna" />
+      </td>
+    </form>
+  </div>
+  <div id="main">
+    <h1>Lisäys</h1>
+    <p>
+      Voit lisätä uusia sanoja sanakirjaan. Syötä suomenkielinen sana vasemmalle ja englanninkielinen sana oikealle. Paina lopuksi tallenna painiketta.
+    </p>
+  </div>
+  <div class="clr"></div>
+    <div id="footer"><p>Copyright 2021</p></div>
+  
+  </body>
+</html>

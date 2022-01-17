@@ -1,0 +1,14 @@
+﻿DebugTest aloitti istunnon  06-01-2022  11:40:44
+DebugTest vallitsi yhteenlaskut  06-01-2022 11:40:47
+DebugTest valitsi helpot yhteenlaskut  06-01-2022 11:40:48
+Vastattu: 3 + 6 = 9
+Vastattu: 5 + 3 = 8
+Vastattu: 8 + 19 = 28. Oikea vastaus: 27
+Vastattu: 9 + 17 = 26
+Vastattu: 6 + 4 = 10
+Vastattu: 1 + 2 = 3
+Vastattu: 5 + 12 = 17
+Vastattu: 4 + 12 = 16
+Vastattu: 4 + 8 = 12
+Vastattu: 4 + 20 = 24
+Tulos:9 / 10 oikein.
