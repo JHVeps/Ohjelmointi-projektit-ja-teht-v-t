@@ -1,0 +1,38 @@
+Urheilijatieto esittäminen tapa 1   
+
+<ul className="list-group">
+          <li className="list-group-item">Syntymavuosi: {syntymavuosi}</li>
+          <li className="list-group-item">Paino: {paino}</li>
+          <li className="list-group-item">
+            <a href={kuva} target="_blank" rel="noreferrer">
+              Kuva
+            </a>
+          </li>
+          <li className="list-group-item">Laji: {laji}</li>
+          <li  className="list-group-item">Saavutukset: {saavutukset}</li>
+        </ul>
+
+Urheilijatieto esittäminen tapa 2
+
+            <thead>
+              <tr>
+                <th>Syntymavuosi</th>
+                <th>Paino</th>
+                <th>Kuva linkki</th>
+                <th>Laji</th>
+                <th>Saavutukset</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{syntymavuosi}</td>
+                <td>{paino}</td>
+                <td>
+                  <a href={kuva} target="_blank" rel="noreferrer">
+                    Kuva
+                  </a>
+                </td>
+                <td>{laji}</td>
+                <td>{saavutukset}</td>
+              </tr>
+            </tbody>
