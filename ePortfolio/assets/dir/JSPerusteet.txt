@@ -1,0 +1,25 @@
+TEHTÄVÄ OHJE: 
+Javascript -perusteet, tehtävät 1 - 2
+
+ 1. Tee sovellus, joka kysyy syötettävän sanan (merkkijono).
+Sovellus testaa onko sana palindromi ts. sana on sama toisinpäin.
+Esim. sana saippuakauppias on palindromi.
+Luo ratkaisu siten että et käytä valmiita funktioita vaan teet oman algoritmin.
+
+Muuta edellinen ratkaisu funktioksi joka palauttaa boolean arvon true, mikäli funktion parametrina oleva sana on palindromi (jos ei, niin palautetaan false).
+
+Kutsu funktiota.
+
+2. Tee puhelinluettelo.
+Puhelinluetteloon lisäät taulukkoon objekteja (eli henkilöitä joilla nimi ja puhelinnumero).
+Käyttäjältä kysytään henkilön nimi ja puhelinnumero.
+Henkilön poisto -toimintoa ei tarvitse tässä versiossa olla.
+
+Tee hakutoiminto jossa haet nimen perusteella puhelinnumeron.
+
+Tee puhelinnumeron haku funktioksi.
+Funktion parametrina on taulukko josta haetaan ja henkilön nimi.
+Funktio palauttaa puhelinnumeron.
+Kutsu funktiota.
+
+Käyttöliittymän voit tehdä millaiseksi haluat (komentokehoite -pohjainen kuitenkin)

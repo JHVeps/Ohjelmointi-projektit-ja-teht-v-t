@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="window" stylesheets="@Styles.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toimistotilojenvarausapp.AsiakasViewController">
+  <tabs>
+    <Tab text="Lisää">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="201.0" layoutY="473.0" mnemonicParsing="false" onAction="#addAsiakas" prefHeight="50.0" prefWidth="100.0" stylesheets="@Styles.css" text="Lisää">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="smallbutton" />
+                        <String fx:value="dark" />
+                     </styleClass>
+                  </Button>
+                  <Label layoutY="30.0" prefHeight="50.0" prefWidth="760.0" styleClass="title" stylesheets="@Styles.css" text="Asiakkaan lisääminen tietokantaan" />
+                  <Label layoutX="1.0" layoutY="75.0" prefHeight="36.0" prefWidth="768.0" styleClass="ohjeteksti" stylesheets="@Styles.css" text="Täytä ensin kaikki tiedot ennen kuin lisäät. Kaikki tiedot ovat vaadittuja." />
+                  <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="150.0" prefWidth="100.0" styleClass="gp-label" text="Etunimi" />
+                  <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="190.0" prefWidth="100.0" styleClass="gp-label" text="Sukunimi" />
+                  <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="230.0" prefWidth="100.0" styleClass="gp-label" text="Organisaatio" />
+                  <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="270.0" prefWidth="100.0" styleClass="gp-label" text="Sähköposti" />
+                  <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="310.0" prefWidth="100.0" styleClass="gp-label" text="Lähiosoite" />
+                  <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="350.0" prefWidth="100.0" styleClass="gp-label" text="Postinumero" />
+                  <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="392.0" prefWidth="100.0" styleClass="gp-label" text="Toimipaikka" />
+                  <Label alignment="CENTER_RIGHT" layoutX="51.0" layoutY="433.0" prefWidth="100.0" styleClass="gp-label" text="Puhelin" />
+                  <TextField fx:id="etunimiAddTextField" layoutX="200.0" layoutY="150.0" styleClass="gridpane" />
+                  <TextField fx:id="sukunimiAddTextField" layoutX="200.0" layoutY="190.0" styleClass="gridpane" />
+                  <TextField fx:id="orgAddTextField" layoutX="200.0" layoutY="230.0" styleClass="gridpane" />
+                  <TextField fx:id="emailAddTextField" layoutX="200.0" layoutY="270.0" styleClass="gridpane" />
+                  <TextField fx:id="lahiosoiteAddTextField" layoutX="200.0" layoutY="310.0" styleClass="gridpane" />
+                  <TextField fx:id="postinumeroAddTextField" layoutX="200.0" layoutY="350.0" styleClass="gridpane" />
+                  <TextField fx:id="toimipaikkaAddTextField" layoutX="200.0" layoutY="392.0" styleClass="gridpane" />
+                  <TextField fx:id="puhelinAddTextField" layoutX="201.0" layoutY="433.0" styleClass="gridpane" />
+               </children>
+            </Pane>
+         </content></Tab>
+    <Tab text="Muokkaa">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="400.0" layoutY="405.0" mnemonicParsing="false" onAction="#modAsiakas" prefHeight="20.0" prefWidth="80.0" text="Muokkaa">
+                     <styleClass>
+                        <String fx:value="smallbutton" />
+                        <String fx:value="dark" />
+                     </styleClass></Button>
+                  <Button layoutX="400.0" layoutY="150.0" mnemonicParsing="false" onAction="#searchAsiakas" prefHeight="35.0" prefWidth="95.0" text="Hae">
+                     <styleClass>
+                        <String fx:value="smallbutton" />
+                        <String fx:value="dark" />
+                     </styleClass></Button>
+                  <Button layoutX="400.0" layoutY="447.0" mnemonicParsing="false" onAction="#deleteAsiakas" prefHeight="20.0" prefWidth="80.0" text="Poista">
+                     <styleClass>
+                        <String fx:value="smallbutton" />
+                        <String fx:value="dark" />
+                     </styleClass></Button>
+                  <Button layoutX="400.0" layoutY="490.0" mnemonicParsing="false" onAction="#clearTextFields" prefHeight="25.0" prefWidth="80.0" text="Tyhjennä">
+                     <styleClass>
+                        <String fx:value="smallbutton" />
+                        <String fx:value="dark" />
+                     </styleClass></Button>
+                  <Label alignment="CENTER_RIGHT" layoutX="51.0" layoutY="204.0" prefWidth="100.0" styleClass="gp-label" text="Etunimi" />
+                  <Label alignment="CENTER_RIGHT" layoutX="51.0" layoutY="246.0" prefWidth="100.0" styleClass="gp-label" text="Sukunimi" />
+                  <Label alignment="CENTER_RIGHT" layoutX="51.0" layoutY="288.0" prefWidth="100.0" styleClass="gp-label" text="Organisaatio" />
+                  <Label alignment="CENTER_RIGHT" layoutX="51.0" layoutY="330.0" prefWidth="100.0" styleClass="gp-label" text="Sähköposti" />
+                  <Label alignment="CENTER_RIGHT" layoutX="51.0" layoutY="372.0" prefWidth="100.0" styleClass="gp-label" text="Lähiosoite" />
+                  <Label alignment="CENTER_RIGHT" layoutX="51.0" layoutY="414.0" prefWidth="100.0" styleClass="gp-label" text="Postinumero" />
+                  <Label alignment="CENTER_RIGHT" layoutX="52.0" layoutY="490.0" prefWidth="100.0" styleClass="gp-label" text="Puhelin" />
+                  <TextField fx:id="etunimiInfoTextField" layoutX="201.0" layoutY="200.0" styleClass="gridpane" />
+                  <TextField fx:id="sukunimiInfoTextField" layoutX="201.0" layoutY="242.0" styleClass="gridpane" />
+                  <TextField fx:id="orgInfoTextField" layoutX="201.0" layoutY="284.0" styleClass="gridpane" />
+                  <TextField fx:id="emailInfoTextField" layoutX="201.0" layoutY="326.0" styleClass="gridpane" />
+                  <TextField fx:id="lahiosoiteInfoTextField" layoutX="201.0" layoutY="368.0" styleClass="gridpane" />
+                  <TextField fx:id="postinumeroInfoTextField" layoutX="201.0" layoutY="410.0" styleClass="gridpane" />
+                  <TextField fx:id="puhelinInfoTextField" layoutX="201.0" layoutY="490.0" styleClass="gridpane" />
+                  <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="150.0" prefWidth="100.0" styleClass="gp-label" text="Asiakas ID" />
+                  <TextField fx:id="asiakasIdInfoTextField" layoutX="200.0" layoutY="150.0" styleClass="gridpane" />
+                  <Label layoutY="30.0" prefHeight="50.0" prefWidth="760.0" styleClass="title" text="Asiakkaan tietojen käsittely" />
+                  <Label layoutY="77.0" prefHeight="27.0" prefWidth="769.0" styleClass="ohjeteksti" text="Hae ensin asiakas tunnisteella. Sen jälkeen voit muokata tietoja tai poistaa asiakkaan." />
+                  <Label alignment="CENTER_RIGHT" layoutX="51.0" layoutY="454.0" prefWidth="100.0" styleClass="gp-label" text="Toimipaikka" />
+                  <TextField fx:id="toimipaikkaInfoTextField" layoutX="201.0" layoutY="450.0" styleClass="gridpane" />
+               </children>
+            </Pane>
+         </content></Tab>
+      <Tab text="Tarkastele">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Button layoutX="345.0" layoutY="150.0" mnemonicParsing="false" onAction="#showAsiakkaatList" text="Näytä">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="smallbutton" />
+                        <String fx:value="dark" />
+                     </styleClass>
+                  </Button>
+                  <Label layoutY="30.0" prefHeight="50.0" prefWidth="760.0" styleClass="title" text="Lista tietokantaan tallennetuista asiakkaista" />
+                  <Label layoutY="80.0" prefHeight="27.0" prefWidth="769.0" styleClass="ohjeteksti" text="Paina Näytä-painiketta ja odota hetki." />
+               </children>
+            </Pane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

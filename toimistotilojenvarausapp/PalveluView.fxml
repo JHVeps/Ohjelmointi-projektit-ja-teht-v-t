@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="window" stylesheets="@Styles.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toimistotilojenvarausapp.PalveluViewController">
+    <tabs>
+        <Tab text="Lisää">
+            <content>
+                <Pane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="nimiAddTextField" layoutX="200.0" layoutY="150.0" styleClass="gridpane" />
+                        <TextField fx:id="hintaAddTextField" layoutX="200.0" layoutY="190.0" styleClass="gridpane" />
+                        <TextField fx:id="tyyppiAddTextField" layoutX="200.0" layoutY="230.0" styleClass="gridpane" />
+                        <TextField fx:id="kuvausAddTextField" layoutX="200.0" layoutY="270.0" styleClass="gridpane" />
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="150.0" prefWidth="100.0" styleClass="gp-label" text="Nimi" />
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="190.0" prefWidth="100.0" styleClass="gp-label" text="Hinta" />
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="230.0" prefWidth="100.0" styleClass="gp-label" text="Tyyppi" />
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="270.0" prefWidth="100.0" styleClass="gp-label" text="Kuvaus" />
+                        <Button layoutX="200.0" layoutY="350.0" mnemonicParsing="false" onAction="#addPalvelu" prefWidth="100.0" styleClass="dark" text="Lisää" />
+                        <TextField fx:id="toimipisteIdAddTextField" layoutX="200.0" layoutY="310.0" styleClass="gridpane" />
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="310.0" prefWidth="100.0" styleClass="gp-label" text="ToimipisteId" />
+                  <Label layoutY="30.0" prefHeight="50.0" prefWidth="760.0" styleClass="title" stylesheets="@Styles.css" text="Palvelun lisääminen tietokantaan" />
+                  <Label layoutY="80.0" prefHeight="36.0" prefWidth="768.0" styleClass="ohjeteksti" stylesheets="@Styles.css" text="Täytä ensin kaikki tiedot ennen kuin lisäät. Kaikki tiedot ovat vaadittuja." />
+                    </children>
+                </Pane>
+            </content></Tab>
+        <Tab text="Muokkaa">
+            <content>
+                <Pane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="nimiInfoTextField" layoutX="200.0" layoutY="220.0" styleClass="gridpane" />
+                        <TextField fx:id="hintaInfoTextField" layoutX="200.0" layoutY="260.0" styleClass="gridpane" />
+                        <TextField fx:id="tyyppiInfoTextField" layoutX="200.0" layoutY="300.0" styleClass="gridpane" />
+                        <TextField fx:id="kuvausInfoTextField" layoutX="200.0" layoutY="340.0" styleClass="gridpane" />
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="220.0" prefWidth="100.0" styleClass="gp-label" text="Nimi" />
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="260.0" prefWidth="100.0" styleClass="gp-label" text="Hinta" />
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="300.0" prefWidth="100.0" styleClass="gp-label" text="Tyyppi" />
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="340.0" prefWidth="100.0" styleClass="gp-label" text="Kuvaus" />
+                        <Button layoutX="200.0" layoutY="420.0" mnemonicParsing="false" onAction="#modPalvelu" prefHeight="20.0" prefWidth="80.0" styleClass="dark" text="Muokkaa" />
+                        <TextField fx:id="palveluIdInfoTextField" layoutX="200.0" layoutY="150.0" styleClass="gridpane" />
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="150.0" prefWidth="100.0" styleClass="gp-label" text="Palvelu ID" />
+                        <TextField fx:id="toimipisteIdInfoTextField" layoutX="200.0" layoutY="380.0" styleClass="gridpane" />
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="380.0" prefWidth="100.0" styleClass="gp-label" text="ToimipisteId" />
+                        <Button layoutX="400.0" layoutY="150.0" mnemonicParsing="false" onAction="#searchPalvelu" prefHeight="25.0" prefWidth="80.0" styleClass="dark" text="Hae" />
+                        <Button layoutX="300.0" layoutY="420.0" mnemonicParsing="false" onAction="#deletePalvelu" prefHeight="20.0" prefWidth="80.0" styleClass="dark" text="Poista" />
+                        <Button layoutX="400.0" layoutY="420.0" mnemonicParsing="false" onAction="#clearTextFields" prefHeight="25.0" prefWidth="80.0" styleClass="dark" text="Tyhjennä" />
+                  <Label layoutY="30.0" prefHeight="50.0" prefWidth="760.0" styleClass="title" stylesheets="@Styles.css" text="Palvelun tietojen käsittely" />
+                  <Label layoutY="80.0" prefHeight="36.0" prefWidth="768.0" styleClass="ohjeteksti" stylesheets="@Styles.css" text="Syötä palvelun ID ja valitse haluttu toiminto." />
+                    </children>
+                </Pane>
+            </content></Tab>
+        <Tab text="Tarkastelu">
+            <content>
+                <Pane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <Button layoutX="360.0" layoutY="150.0" mnemonicParsing="false" onAction="#showPalvelutList" prefWidth="80.0" styleClass="dark" text="Näytä" />
+                  <Label layoutY="30.0" prefHeight="50.0" prefWidth="760.0" styleClass="title" text="Lista tietokantaan tallennetuista palveluista" />
+                  <Label layoutY="80.0" prefHeight="27.0" prefWidth="769.0" styleClass="ohjeteksti" text="Paina Näytä-painiketta ja odota hetki." />
+                    </children>
+                </Pane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

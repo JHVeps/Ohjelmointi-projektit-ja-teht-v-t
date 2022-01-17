@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="967.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toimistotilojenvarausapp.LaskuListViewController">
+   <children>
+      <TableView fx:id="laskutetutTblView" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="viitenumeroColumn" prefWidth="79.0" text="Viitenumero" />
+          <TableColumn fx:id="varausIdColumn" prefWidth="79.0" text="Varauksen ID" />
+            <TableColumn fx:id="asiakasIdColumn" prefWidth="82.0" text="Asiakkaan ID" />
+            <TableColumn fx:id="etunimiColumn" prefWidth="108.0" text="Etunimi" />
+            <TableColumn fx:id="sukunimiColumn" minWidth="0.0" prefWidth="170.0" text="Sukunimi" />
+            <TableColumn fx:id="summaColumn" minWidth="0.0" prefWidth="119.0" text="Summa" />
+            <TableColumn fx:id="erapaivaColumn" prefWidth="160.0" text="Eräpäivä" />
+            <TableColumn fx:id="laskutustapaColumn" prefWidth="168.0" text="Laskutustapa" />
+        </columns>
+      </TableView>
+   </children>
+</StackPane>

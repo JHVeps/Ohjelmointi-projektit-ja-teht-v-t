@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="967.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toimistotilojenvarausapp.VarauksenLisapalveluTietoListViewController">
+   <children>
+      <TableView fx:id="varauksenLisapalveluTblView" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="varausIdColumn" prefWidth="84.0" text="Varauksen ID" />
+          <TableColumn fx:id="asiakasIdColumn" prefWidth="79.0" text="Asiakkaan ID" />
+            <TableColumn fx:id="etunimiColumn" prefWidth="98.0" text="Etunimi" />
+            <TableColumn fx:id="sukunimiColumn" prefWidth="143.0" text="Sukunimi" />
+            <TableColumn fx:id="palvelunIdColumn" minWidth="0.0" prefWidth="74.0" text="Palvelun ID" />
+            <TableColumn fx:id="palvelunNimiColumn" minWidth="0.0" prefWidth="163.0" text="Palvelun nimi" />
+            <TableColumn fx:id="aloitusPvmColumn" prefWidth="154.0" text="Aloitus päivämäärä" />
+            <TableColumn fx:id="lopetusPvmColumn" prefWidth="170.0" text="Lopetus päivämäärä" />
+        </columns>
+      </TableView>
+   </children>
+</StackPane>

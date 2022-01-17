@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="794.0" prefWidth="1074.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toimistotilojenvarausapp.AsiakasListViewController">
+    <children>
+        <TableView fx:id="asiakasTblView" prefHeight="600.0" prefWidth="800.0">
+            <columns>
+                <TableColumn fx:id="asiakasIdColumn" prefWidth="50.000030517578125" text="ID" />
+                <TableColumn fx:id="sukunimiColumn" prefWidth="143.0" text="Sukunimi" />
+                <TableColumn fx:id="etunimiColumn" prefWidth="87.0" text="Etunimi" />
+                <TableColumn fx:id="organisaatioColumn" prefWidth="142.0" text="Organisaatio" />
+                <TableColumn fx:id="emailColumn" prefWidth="131.0" text="Sähköposti" />
+                <TableColumn fx:id="lahiosoiteColumn" prefWidth="140.0" text="Lähiosoite" />
+                <TableColumn fx:id="postinumeroColumn" prefWidth="89.0" text="Postinumero" />
+                <TableColumn fx:id="toimipaikkaColumn" prefWidth="155.0" text="Toimipaikka" />
+            <TableColumn fx:id="puhelinColumn" prefWidth="135.0" text="Puhelin" />
+            </columns>
+        </TableView>
+    </children>
+</StackPane>

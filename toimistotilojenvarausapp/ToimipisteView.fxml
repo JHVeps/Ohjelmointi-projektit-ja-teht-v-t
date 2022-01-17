@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" styleClass="window" stylesheets="@Styles.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toimistotilojenvarausapp.ToimipisteViewController">
+    <tabs>
+        <Tab text="Lisää">
+            <content>
+                <Pane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="nimiAddTextField" layoutX="200.0" layoutY="150.0" styleClass="gridpane" />
+                        <TextField fx:id="lahiosoiteAddTextField" layoutX="200.0" layoutY="190.0" styleClass="gridpane" />
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="150.0" prefWidth="100.0" styleClass="gp-label" text="Nimi" />
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="190.0" prefWidth="100.0" styleClass="gp-label" text="Lähiosoite" />
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="310.0" prefWidth="100.0" styleClass="gp-label" text="Kuvaus" />
+                        <Button layoutX="200.0" layoutY="350.0" mnemonicParsing="false" onAction="#addToimipiste" prefWidth="80.0" styleClass="dark" text="Lisää" />
+                  <TextField fx:id="postinroAddTextField" layoutX="200.0" layoutY="230.0" styleClass="gridpane" />
+                  <TextField fx:id="toimipaikkaAddTextField" layoutX="200.0" layoutY="270.0" styleClass="gridpane" />
+                  <TextField fx:id="kuvausAddTextField" layoutX="200.0" layoutY="310.0" styleClass="gridpane" />
+                  <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="230.0" prefWidth="100.0" styleClass="gp-label" text="Postinumero" />
+                  <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="270.0" prefWidth="100.0" styleClass="gp-label" text="Toimipaikka" />
+                  <Label layoutY="30.0" prefHeight="50.0" prefWidth="760.0" styleClass="title" stylesheets="@Styles.css" text="Toimipisteen lisääminen tietokantaan" />
+                  <Label layoutY="80.0" prefHeight="36.0" prefWidth="768.0" styleClass="ohjeteksti" stylesheets="@Styles.css" text="Täytä ensin kaikki tiedot. Kaikki tiedot ovat vaadittuja." />
+                    </children>
+                </Pane>
+            </content></Tab>
+        <Tab text="Muokkaa">
+            <content>
+                <Pane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="modNimiTextField" layoutX="200.0" layoutY="190.0" styleClass="gridpane" />
+                        <TextField fx:id="modLahiosoiteTextField" layoutX="200.0" layoutY="230.0" styleClass="gridpane" />
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="190.0" prefWidth="100.0" styleClass="gp-label" text="Nimi" />
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="230.0" prefWidth="100.0" styleClass="gp-label" text="Lähiosoite" />
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="270.0" prefWidth="100.0" styleClass="gp-label" text="Postinro" />
+                        <Button layoutX="200.0" layoutY="390.0" mnemonicParsing="false" onAction="#modToimipiste" prefWidth="80.0" styleClass="dark" text="Muokkaa" />
+                        <TextField fx:id="modToimipisteIdTextField" layoutX="200.0" layoutY="150.0" styleClass="gridpane" />
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="150.0" prefWidth="100.0" styleClass="gp-label" text="Toimipiste ID" />
+                  <TextField fx:id="modPostinroTextField" layoutX="200.0" layoutY="270.0" styleClass="gridpane" />
+                  <TextField fx:id="modToimipaikkaTextField" layoutX="200.0" layoutY="310.0" styleClass="gridpane" />
+                  <TextField fx:id="modKuvausTextField" layoutX="200.0" layoutY="350.0" styleClass="gridpane" />
+                  <Label layoutY="30.0" prefHeight="50.0" prefWidth="760.0" styleClass="title" stylesheets="@Styles.css" text="Toimipisteen tietojen muokkaaminen" />
+                  <Label layoutY="80.0" prefHeight="36.0" prefWidth="768.0" styleClass="ohjeteksti" stylesheets="@Styles.css" text="Täytä ensin kaikki tiedot. Kaikki tiedot ovat vaadittuja." />
+                  <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="310.0" prefWidth="100.0" styleClass="gp-label" text="Toimipaikka" />
+                  <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="350.0" prefWidth="100.0" styleClass="gp-label" text="Kuvaus" />
+                    </children>
+                </Pane>
+            </content></Tab>
+        <Tab text="Hae tietoja">
+            <content>
+                <Pane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="searchToimipisteIdTextField" layoutX="200.0" layoutY="150.0" styleClass="gridpane" />
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="150.0" prefWidth="100.0" styleClass="gp-label" text="Toimipiste ID" />
+                        <Button layoutX="200.0" layoutY="390.0" mnemonicParsing="false" onAction="#searchToimipiste" prefWidth="80.0" styleClass="dark" text="Hae" />
+                        <TextField fx:id="searchToimipisteNimiTextField" layoutX="200.0" layoutY="190.0" styleClass="gridpane" />
+                        <TextField fx:id="searchToimipisteLahisoiteTextField" layoutX="200.0" layoutY="230.0" styleClass="gridpane" />
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="190.0" prefWidth="100.0" styleClass="gp-label" text="Nimi" />
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="230.0" prefWidth="100.0" styleClass="gp-label" text="Lähiosoite" />
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="270.0" prefWidth="100.0" styleClass="gp-label" text="Postinro" />
+                        <Button layoutX="297.0" layoutY="390.0" mnemonicParsing="false" onAction="#clearTextFields" prefWidth="80.0" styleClass="dark" text="Tyhjennä" />
+                  <TextField fx:id="searchToimipistePostinroTextField" layoutX="200.0" layoutY="270.0" styleClass="gridpane" />
+                  <TextField fx:id="searchToimipisteToimipaikkaTextField" layoutX="200.0" layoutY="310.0" styleClass="gridpane" />
+                  <TextField fx:id="searchToimipisteKuvausTextField" layoutX="200.0" layoutY="350.0" styleClass="gridpane" />
+                  <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="310.0" prefWidth="100.0" styleClass="gp-label" text="Toimipaikka" />
+                  <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="350.0" prefWidth="100.0" styleClass="gp-label" text="Kuvaus" />
+                  <Label layoutY="30.0" prefHeight="50.0" prefWidth="760.0" styleClass="title" stylesheets="@Styles.css" text="Toimipisteen tietojen hakeminen" />
+                  <Label layoutY="80.0" prefHeight="36.0" prefWidth="768.0" styleClass="ohjeteksti" stylesheets="@Styles.css" text="Hae toimipistettä sen ID:n perusteella." />
+                    </children>
+                </Pane>
+            </content>
+        </Tab>
+        <Tab text="Poista">
+            <content>
+                <Pane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="deleteToimipisteIdTextField" layoutX="200.0" layoutY="150.0" styleClass="gridpane" />
+                        <Label alignment="CENTER_RIGHT" layoutX="50.0" layoutY="150.0" prefWidth="100.0" styleClass="gp-label" text="Toimipiste ID" />
+                        <Button layoutX="200.0" layoutY="197.0" mnemonicParsing="false" onAction="#deleteToimipiste" prefWidth="80.0" styleClass="dark" text="Poista" />
+                  <Label layoutY="30.0" prefHeight="50.0" prefWidth="760.0" styleClass="title" stylesheets="@Styles.css" text="Toimipisteen tietojen poistaminen" />
+                  <Label layoutY="80.0" prefHeight="36.0" prefWidth="768.0" styleClass="ohjeteksti" stylesheets="@Styles.css" text="Poista toimipiste tietokannasta." />
+                    </children>
+                </Pane>
+            </content>
+        </Tab>
+        <Tab text="Tarkastelu">
+            <content>
+                <Pane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <Button layoutX="360.0" layoutY="150.0" mnemonicParsing="false" onAction="#showToimipisteetList" text="Näytä">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                     <styleClass>
+                        <String fx:value="dark" />
+                        <String fx:value="smallbutton" />
+                     </styleClass>
+                        </Button>
+                  <Label layoutY="30.0" prefHeight="50.0" prefWidth="760.0" styleClass="title" stylesheets="@Styles.css" text="Lista tietokantaan tallennetuista toimipisteistä." />
+                  <Label layoutY="80.0" prefHeight="36.0" prefWidth="768.0" styleClass="ohjeteksti" stylesheets="@Styles.css" text="Paina Näytä-painiketta ja odota hetki." />
+                    </children>
+                </Pane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>
