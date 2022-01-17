@@ -1,0 +1,17 @@
+auto car
+talo house
+ilma air
+aurinko sun
+ikkuna window
+ase gun
+lasi glass
+pilvi cloud
+vuori mountain
+kuu moon
+tähti star
+tietokone computer
+verho curtain
+katto roof
+tiede science
+sana word
+pöytä table
