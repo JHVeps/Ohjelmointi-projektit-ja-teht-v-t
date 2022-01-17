@@ -10,8 +10,8 @@ import { ComputerVisionClient } from "@azure/cognitiveservices-computervision";
 import { ApiKeyCredentials } from "@azure/ms-rest-js";
 
 // Authentication requirements
-const key = "2f4f5155253c45a9a65b2196231453dd";
-const endpoint = "https://tikoagileproject.cognitiveservices.azure.com/";
+const key = "";
+const endpoint = "";
 
 // Cognitive service features
 
