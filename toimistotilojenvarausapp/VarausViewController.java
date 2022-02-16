@@ -133,8 +133,8 @@ public class VarausViewController implements Initializable {
              */
             try {
                 Connection conn = Tietokantayhteys.openConnection(
-                        "jdbc:mariadb://maria.westeurope.cloudapp.azure.com:"
-                        + "3306?user=opiskelija&password=opiskelija1");
+                        ""
+                        + "");
 
                 /*
                  * Määritetään käytettävä tietokanta
