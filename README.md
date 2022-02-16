@@ -1,1 +1,0 @@
-# Ohjelmointi projektit ja tehtävät
