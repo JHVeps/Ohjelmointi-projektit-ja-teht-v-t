@@ -206,8 +206,8 @@ public class LaskuViewController implements Initializable {
 
                  // otetaan yhteys tietokantaan
                  Connection conn = Tietokantayhteys.openConnection(
-                         "jdbc:mariadb://maria.westeurope.cloudapp.azure.com:"
-                         + "3306?user=opiskelija&password=opiskelija1");
+                         ""
+                         + "");
 
                  //määritetään käytettävä tietokanta
                  Tietokantayhteys.useDatabase(conn, "OHTU1kantaR04");
