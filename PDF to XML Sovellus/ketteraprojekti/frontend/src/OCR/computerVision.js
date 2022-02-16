@@ -13,17 +13,6 @@ import { ApiKeyCredentials } from "@azure/ms-rest-js";
 const key = "";
 const endpoint = "";
 
-// Cognitive service features
-
-// Tarviiko meidän nyt tätä tarkastaa ollenkaan..
-/* export const isConfigured = () => {
-  const result =
-    key && endpoint && key.length > 0 && endpoint.length > 0 ? true : false;
-  console.log(`key = ${key}`);
-  console.log(`endpoint = ${endpoint}`);
-  console.log(`ComputerVision isConfigured = ${result}`);
-  return result;
-}; */
 
 // Wait for text detection to succeed
 const wait = (timeout) => {
