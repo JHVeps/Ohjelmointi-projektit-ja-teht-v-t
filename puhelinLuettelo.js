@@ -37,11 +37,7 @@ puhelinluettelo.henkilorekisteri = (function () {
 
     console.log(word);
 
-    // if (Lista.nimi === nimi) {
-    //   return console.log(Lista);
-    //   /**Tätä en osaa tehdä vielä!!*/
-    //   //return Lista[].henkilo.puhelinNro;
-    // }
+
   }
   // rajapinta
   return {
