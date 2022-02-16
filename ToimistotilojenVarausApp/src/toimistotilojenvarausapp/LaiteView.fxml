@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toimistotilojenvarausapp.LaiteViewController">
+   <children>
+      <TextField fx:id="HintaAddTextField" layoutX="113.0" layoutY="100.0" />
+      <TextField fx:id="KuvausAddTextField" layoutX="113.0" layoutY="143.0" />
+      <Label layoutX="34.0" layoutY="104.0" text="Hinta" />
+      <Label layoutX="34.0" layoutY="147.0" text="Kuvaus" />
+      <Button layoutX="254.0" layoutY="356.0" mnemonicParsing="false" onAction="#addLaite" text="Lisää" />
+      <Button layoutX="444.0" layoutY="356.0" mnemonicParsing="false" onAction="#modLaite" text="Muokkaa" />
+      <Button layoutX="527.0" layoutY="356.0" mnemonicParsing="false" onAction="#deleteLaite" text="Poista" />
+      <Button layoutX="597.0" layoutY="356.0" mnemonicParsing="false" onAction="#searchLaite" text="Hae" />
+      <TextField fx:id="infoHintaTextField" layoutX="461.0" layoutY="144.0" />
+      <TextField fx:id="infoKuvausTextField" layoutX="461.0" layoutY="187.0" />
+      <TextField fx:id="laitteenNimiTextField" layoutX="461.0" layoutY="100.0" />
+      <Label layoutX="367.0" layoutY="104.0" text="Laitteen nimi" />
+      <Button layoutX="663.0" layoutY="356.0" mnemonicParsing="false" onAction="#clearTextFields" text="Tyhjennä" />
+      <Button layoutX="57.0" layoutY="514.0" mnemonicParsing="false" onAction="#showLaitteetList" text="Näytä" />
+      <Text layoutX="128.0" layoutY="531.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista kaikista tietokantaan tallennetuista laitteista" />
+      <Text layoutX="369.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Syötä ID / tiedot valitse haluttu toiminto painikkeella" />
+      <Label layoutX="367.0" layoutY="147.0" text="Hinta" />
+      <Label layoutX="367.0" layoutY="193.0" text="Kuvaus" />
+   </children>
+</Pane>

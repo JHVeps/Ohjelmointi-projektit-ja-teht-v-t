@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toimistotilojenvarausapp.PalveluViewController">
+    <tabs>
+        <Tab text="Palvelun lisääminen">
+            <content>
+                <Pane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="nimiAddTextField" layoutX="198.0" layoutY="139.0" />
+                        <TextField fx:id="hintaAddTextField" layoutX="198.0" layoutY="179.0" />
+                        <TextField fx:id="tyyppiAddTextField" layoutX="198.0" layoutY="220.0" />
+                        <TextField fx:id="kuvausAddTextField" layoutX="198.0" layoutY="261.0" />
+                        <Label layoutX="100.0" layoutY="143.0" text="Nimi" />
+                        <Label layoutX="100.0" layoutY="183.0" text="Hinta" />
+                        <Label layoutX="100.0" layoutY="224.0" text="Tyyppi" />
+                        <Label layoutX="100.0" layoutY="265.0" text="Kuvaus" />
+                        <Button layoutX="639.0" layoutY="463.0" mnemonicParsing="false" onAction="#addPalvelu" prefHeight="50.0" prefWidth="100.0" text="Lisää">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Button>
+                        <Text layoutX="100.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Palvelun lisääminen tietokantaan">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Text>
+                        <TextField fx:id="toimipisteIdAddTextField" layoutX="198.0" layoutY="297.0" />
+                        <Label layoutX="100.0" layoutY="301.0" text="ToimipisteId" />
+                    </children>
+                </Pane>
+            </content></Tab>
+        <Tab text="Palvelun tietojen käsittely">
+            <content>
+                <Pane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="nimiInfoTextField" layoutX="198.0" layoutY="179.0" />
+                        <TextField fx:id="hintaInfoTextField" layoutX="198.0" layoutY="219.0" />
+                        <TextField fx:id="tyyppiInfoTextField" layoutX="198.0" layoutY="260.0" />
+                        <TextField fx:id="kuvausInfoTextField" layoutX="198.0" layoutY="301.0" />
+                        <Label layoutX="100.0" layoutY="183.0" text="Nimi" />
+                        <Label layoutX="100.0" layoutY="223.0" text="Hinta" />
+                        <Label layoutX="100.0" layoutY="264.0" text="Tyyppi" />
+                        <Label layoutX="100.0" layoutY="305.0" text="Kuvaus" />
+                        <Text layoutX="100.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Syötä palvelun ID ja valitse haluttu toiminto">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Text>
+                        <Button layoutX="618.0" layoutY="179.0" mnemonicParsing="false" onAction="#modPalvelu" prefHeight="20.0" prefWidth="80.0" text="Muokkaa" />
+                        <TextField fx:id="palveluIdInfoTextField" layoutX="198.0" layoutY="103.0" />
+                        <Label layoutX="100.0" layoutY="107.0" text="Palvelu ID" />
+                        <TextField fx:id="toimipisteIdInfoTextField" layoutX="198.0" layoutY="340.0" />
+                        <Label layoutX="100.0" layoutY="344.0" text="ToimipisteId" />
+                        <Button layoutX="618.0" layoutY="103.0" mnemonicParsing="false" onAction="#searchPalvelu" prefHeight="25.0" prefWidth="80.0" text="Hae" />
+                        <Button layoutX="618.0" layoutY="219.0" mnemonicParsing="false" onAction="#deletePalvelu" prefHeight="20.0" prefWidth="80.0" text="Poista" />
+                        <Button layoutX="618.0" layoutY="260.0" mnemonicParsing="false" onAction="#clearTextFields" prefHeight="25.0" prefWidth="80.0" text="Tyhjennä" />
+                    </children>
+                </Pane>
+            </content></Tab>
+        <Tab text="Palvelulistan tarkastelu">
+            <content>
+                <Pane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <Text layoutX="100.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista tietokantaan tallennetuista palveluista">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Text>
+                        <Button layoutX="639.0" layoutY="463.0" mnemonicParsing="false" onAction="#showPalvelutList" text="Näytä">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </Pane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

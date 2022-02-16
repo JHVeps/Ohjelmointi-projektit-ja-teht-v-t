@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toimistotilojenvarausapp.ToimipisteViewController">
+    <tabs>
+        <Tab text="Toimipisteen lisääminen">
+            <content>
+                <Pane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="nimiAddTextField" layoutX="198.0" layoutY="139.0" />
+                        <TextField fx:id="osoiteAddTextField" layoutX="198.0" layoutY="179.0" />
+                        <Label layoutX="100.0" layoutY="143.0" text="Nimi" />
+                        <Label layoutX="100.0" layoutY="183.0" text="Osoite" />
+                        <Label layoutX="100.0" layoutY="224.0" text="Kuvaus" />
+                        <Button layoutX="639.0" layoutY="463.0" mnemonicParsing="false" onAction="#addToimipiste" prefHeight="50.0" prefWidth="100.0" text="Lisää">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Button>
+                        <Text layoutX="100.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toimipisteen lisääminen tietokantaan">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Text>
+                  <TextField layoutX="198.0" layoutY="220.0" />
+                    </children>
+                </Pane>
+            </content></Tab>
+        <Tab text="Toimipisteen tietojen muokkaaminen">
+            <content>
+                <Pane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="modNimiTextField" layoutX="198.0" layoutY="179.0" />
+                        <TextField fx:id="modOsoiteTextField" layoutX="198.0" layoutY="219.0" />
+                        <Label layoutX="100.0" layoutY="183.0" text="Nimi" />
+                        <Label layoutX="100.0" layoutY="223.0" text="Osoite" />
+                        <Label layoutX="100.0" layoutY="264.0" text="Kuvaus" />
+                        <Text layoutX="100.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toimipisteen tietojen muokkaaminen">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Text>
+                        <Button layoutX="639.0" layoutY="463.0" mnemonicParsing="false" onAction="#modToimipiste" text="Muokkaa">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Button>
+                        <TextField fx:id="modToimipisteIdTextField" layoutX="198.0" layoutY="139.0" />
+                        <Label layoutX="100.0" layoutY="143.0" text="Toimipiste ID" />
+                  <TextField layoutX="198.0" layoutY="260.0" />
+                    </children>
+                </Pane>
+            </content></Tab>
+        <Tab text="Toimipisteen tietojen hakeminen ">
+            <content>
+                <Pane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <TextField fx:id="searchToimipisteIdTextField" layoutX="198.0" layoutY="139.0" />
+                        <Label layoutX="100.0" layoutY="143.0" text="Toimipiste ID" />
+                        <Text layoutX="100.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toimipisteen tietojen hakeminen">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Text>
+                        <Button layoutX="639.0" layoutY="463.0" mnemonicParsing="false" onAction="#searchToimipiste" text="Hae">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Button>
+                        <TextField fx:id="searchToimipisteNimiTextField" layoutX="198.0" layoutY="179.0" />
+                        <TextField fx:id="searchToimipisteOsoiteTextField" layoutX="198.0" layoutY="219.0" />
+                        <Label layoutX="100.0" layoutY="183.0" text="Nimi" />
+                        <Label layoutX="100.0" layoutY="223.0" text="Osoite" />
+                        <Label layoutX="100.0" layoutY="264.0" text="Kuvaus" />
+                        <Button layoutX="407.0" layoutY="301.0" mnemonicParsing="false" onAction="#clearTextFields" text="Tyhjennä" />
+                  <TextField layoutX="198.0" layoutY="260.0" />
+                    </children>
+                </Pane>
+            </content>
+        </Tab>
+        <Tab text="Toimipisteen poistaminen">
+            <content>
+                <Pane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <Text layoutX="100.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toimipisteen tietojen poistaminen tietokannasta">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Text>
+                        <TextField fx:id="deleteToimipisteIdTextField" layoutX="198.0" layoutY="139.0" />
+                        <Label layoutX="100.0" layoutY="143.0" text="Toimipiste ID" />
+                        <Button layoutX="639.0" layoutY="463.0" mnemonicParsing="false" onAction="#deleteToimipiste" text="Poista">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </Pane>
+            </content>
+        </Tab>
+        <Tab text="Toimipisteen tarkastelu">
+            <content>
+                <Pane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                        <Text layoutX="100.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista tietokantaan tallennetuista toimipisteistä">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Text>
+                        <Button layoutX="639.0" layoutY="463.0" mnemonicParsing="false" onAction="#showToimipisteetList" text="Näytä">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </Pane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

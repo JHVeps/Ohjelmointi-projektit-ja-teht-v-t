@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toimistotilojenvarausapp.AsiakasViewController">
+  <tabs>
+    <Tab text="Asiakkaan lisääminen">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="etunimiAddTextField" layoutX="198.0" layoutY="139.0" />
+                  <TextField fx:id="sukunimiAddTextField" layoutX="198.0" layoutY="179.0" />
+                  <TextField fx:id="orgAddTextField" layoutX="198.0" layoutY="220.0" />
+                  <TextField fx:id="emailAddTextField" layoutX="198.0" layoutY="261.0" />
+                  <Label layoutX="100.0" layoutY="143.0" text="Etunimi" />
+                  <Label layoutX="100.0" layoutY="183.0" text="Sukunimi" />
+                  <Label layoutX="100.0" layoutY="224.0" text="Organisaatio" />
+                  <Label layoutX="100.0" layoutY="265.0" text="Sähköposti" />
+                  <Button layoutX="639.0" layoutY="463.0" mnemonicParsing="false" onAction="#addAsiakas" prefHeight="50.0" prefWidth="100.0" text="Lisää">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="100.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asiakkaan lisääminen tietokantaan">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="lahiosoiteAddTextField" layoutX="198.0" layoutY="297.0" />
+                  <TextField fx:id="postinumeroAddTextField" layoutX="198.0" layoutY="338.0" />
+                  <TextField fx:id="puhelinAddTextField" layoutX="198.0" layoutY="379.0" />
+                  <Label layoutX="100.0" layoutY="301.0" text="Lähiosoite" />
+                  <Label layoutX="100.0" layoutY="342.0" text="Postinumero" />
+                  <Label layoutX="100.0" layoutY="383.0" text="Puhelin" />
+               </children>
+            </Pane>
+         </content></Tab>
+    <Tab text="Asiakkaan tietojen käsittely">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="etunimiInfoTextField" layoutX="198.0" layoutY="179.0" />
+                  <TextField fx:id="sukunimiInfoTextField" layoutX="198.0" layoutY="219.0" />
+                  <TextField fx:id="orgInfoTextField" layoutX="198.0" layoutY="260.0" />
+                  <TextField fx:id="emailInfoTextField" layoutX="198.0" layoutY="301.0" />
+                  <Label layoutX="100.0" layoutY="183.0" text="Etunimi" />
+                  <Label layoutX="100.0" layoutY="223.0" text="Sukunimi" />
+                  <Label layoutX="100.0" layoutY="264.0" text="Organisaatio" />
+                  <Label layoutX="100.0" layoutY="305.0" text="Sähköposti" />
+                  <Text layoutX="100.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Syötä asiakkaan ID ja valitse haluttu toiminto">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="618.0" layoutY="179.0" mnemonicParsing="false" onAction="#modAsiakas" prefHeight="20.0" prefWidth="80.0" text="Muokkaa" />
+                  <TextField fx:id="asiakasIdInfoTextField" layoutX="198.0" layoutY="103.0" />
+                  <Label layoutX="100.0" layoutY="107.0" text="Asiakas ID" />
+                  <TextField fx:id="lahiosoiteInfoTextField" layoutX="198.0" layoutY="340.0" />
+                  <TextField fx:id="postinumeroInfoTextField" layoutX="198.0" layoutY="381.0" />
+                  <TextField fx:id="puhelinInfoTextField" layoutX="198.0" layoutY="422.0" />
+                  <Label layoutX="100.0" layoutY="344.0" text="Lähiosoite" />
+                  <Label layoutX="100.0" layoutY="385.0" text="Postinumero" />
+                  <Label layoutX="100.0" layoutY="426.0" text="Puhelin" />
+                  <Button layoutX="618.0" layoutY="103.0" mnemonicParsing="false" onAction="#searchAsiakas" prefHeight="25.0" prefWidth="80.0" text="Hae" />
+                  <Button layoutX="618.0" layoutY="219.0" mnemonicParsing="false" onAction="#deleteAsiakas" prefHeight="20.0" prefWidth="80.0" text="Poista" />
+                  <Button layoutX="618.0" layoutY="260.0" mnemonicParsing="false" onAction="#clearTextFields" prefHeight="25.0" prefWidth="80.0" text="Tyhjennä" />
+               </children>
+            </Pane>
+         </content></Tab>
+      <Tab text="Asiakaslistan tarkastelu">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Text layoutX="100.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista tietokantaan tallennetuista asiakkaista">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="639.0" layoutY="463.0" mnemonicParsing="false" onAction="#showAsiakkaatList" text="Näytä">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

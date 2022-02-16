@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toimistotilojenvarausapp.LaiteListViewController">
+   <children>
+      <TableView fx:id="laiteTblView" prefHeight="600.0" prefWidth="800.0">
+        <columns>
+          <TableColumn fx:id="laiteIdColumn" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="HintaColumn" prefWidth="130.0" text="Hinta" />
+          <TableColumn fx:id="KuvausColumn" prefWidth="200.0" text="Kuvaus" />
+        </columns>
+      </TableView>
+   </children>
+</StackPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toimistotilojenvarausapp.VarausListViewController">
+   <children>
+      <TableView fx:id="varausTblView" prefHeight="600.0" prefWidth="800.0">
+        <columns>
+          <TableColumn fx:id="varausIdColumn" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="aloitusPvmColumn" prefWidth="130.0" text="AloitusPvm" />
+          <TableColumn fx:id="lopetusPvmColumn" prefWidth="200.0" text="LopetusPvm" />
+          <TableColumn fx:id="asiakasIDColumn" prefWidth="270.0" text="asiakasID" />
+          <TableColumn fx:id="toimipisteIDColumn" prefWidth="340.0" text="toimipisteID" />
+        </columns>
+      </TableView>
+   </children>
+</StackPane>

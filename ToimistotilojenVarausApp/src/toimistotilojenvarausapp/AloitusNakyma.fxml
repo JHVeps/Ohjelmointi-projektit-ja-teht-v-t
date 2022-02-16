@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toimistotilojenvarausapp.AloitusNakymaController">
+   <children>
+      <Button layoutX="118.0" layoutY="154.0" mnemonicParsing="false" onAction="#showAsiakasView" text="Asiakas" />
+      <Button layoutX="200.0" layoutY="154.0" mnemonicParsing="false" onAction="#showToimipisteView" text="Toimipiste" />
+      <Button layoutX="377.0" layoutY="154.0" mnemonicParsing="false" onAction="#showLaskuView" text="Lasku" />
+      <Button layoutX="703.0" layoutY="539.0" mnemonicParsing="false" onAction="#closeApp" text="Lopeta" />
+      <Button layoutX="298.0" layoutY="154.0" mnemonicParsing="false" onAction="#showVarausView" text="Varaus" />
+      <Button layoutX="450.0" layoutY="154.0" mnemonicParsing="false" onAction="#showPalveluView" text="Palvelu" />
+   </children>
+</Pane>

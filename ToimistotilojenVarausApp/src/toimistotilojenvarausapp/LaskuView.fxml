@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.Pane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toimistotilojenvarausapp.LaskuViewController">
+    <tabs>
+        <Tab text="Laskun lisäys">
+            <content>
+                <Pane prefHeight="200.0" prefWidth="200.0" />
+            </content>
+        </Tab>
+        <Tab text="Laskun tiedot">
+            <content>
+                <Pane prefHeight="200.0" prefWidth="200.0" />
+            </content>
+        </Tab>
+        <Tab text="Laskujen tarkastelu">
+            <content>
+                <Pane prefHeight="200.0" prefWidth="200.0" />
+            </content>
+        </Tab>
+        <Tab text="Laskun seuranta">
+            <content>
+                <Pane prefHeight="200.0" prefWidth="200.0" />
+            </content>
+        </Tab>
+    
+    </tabs>
+</TabPane>
