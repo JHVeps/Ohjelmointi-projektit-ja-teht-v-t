@@ -1,9 +1,7 @@
 import java.util.Arrays;
 
 public class TRAI_21_X1_joniveps implements TRAI_21_X1 {
-             //         ^^^^^
-          // oma tunnus tähän
-
+          
     /**
      * Suurimman ja pienimmän summa.
      * Palauttaa taulukon suurimman ja pienimmän luvun summan tai null jos
