@@ -1,7 +1,0 @@
-TEHTÄVÄ OHJE: 
-
-4b) Määräaika: sunnuntai, 17 lokakuu 2021, 23:59
-
-Luo edellä tehtyyn (tehtävässä 4a) REST APIiin käyttöliittymä, jonka avulla voit lisätä ja hakea sanoja.
-                                        
-Käytä käyttöliittymässä jQueryä ja html:ää.
