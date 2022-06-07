@@ -1,1 +1,1 @@
-Ohjelmointi projektit ja opintojen aikaisia tehtäviä
+Some of my programming projects and assignments during my studies.
