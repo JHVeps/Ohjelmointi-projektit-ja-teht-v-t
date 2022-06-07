@@ -5,4 +5,5 @@ React
 MySQL
 
 App for adding, editing and deleting data of athletes.
-Datra is saved to MySQL datbase
+
+Data is saved to MySQL database.
