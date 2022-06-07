@@ -1,0 +1,151 @@
+.Navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+  height: 56px;
+  width: 100%;
+  display: flex;
+  color: #282828;
+}
+
+button:hover {
+  background-color: rgb(212, 211, 211);
+}
+
+.Navbar .logo {
+  flex: 10%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.logoSize {
+  width: 150px;
+}
+
+.Navbar .search {
+  flex: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.Navbar .search input {
+  width: 572px;
+  height: 38px;
+  font-size: 16px;
+  padding-left: 15px;
+  color: #282828;
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid #bcbcbc;
+  margin-left: 20px;
+}
+
+.Navbar .myFavorite {
+  flex: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.Navbar .myFavorite button {
+  height: 40px;
+  width: 100px;
+  font-size: 14px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 20px;
+  vertical-align: middle;
+  background-color: white;
+  cursor: pointer;
+}
+
+.favoriteText {
+  background-color: black;
+  color: aliceblue;
+  display: none;
+}
+
+.Navbar .myFavorite button:hover + .favoriteText {
+  display: block;
+}
+
+.Navbar .signIn {
+  flex: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.Navbar .signIn button {
+  height: 40px;
+  width: 100px;
+  font-size: 14px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 20px;
+  vertical-align: middle;
+  background-color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .Navbar .links a {
+    font-size: medium;
+    margin-right: 20px;
+  }
+  .Navbar .logo .logoSize {
+    justify-content: left;
+    width: 80 px;
+  }
+
+  .Navbar .search input {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .Navbar .logo .logoSize {
+    justify-content: left;
+    width: 60 px;
+  }
+  .Navbar .search input {
+    width: 100px;
+  }
+
+  .search-container {
+    top: 100%;
+    left: 2%;
+    width: 90%;
+  }
+}
+
+/* 
+Hakutulokset. Tuossa yläpuolella sijainti max 650px näytön leveydellä
+*/
+.search-container {
+  position: absolute;
+  z-index: 500;
+}
+
+.search__result {
+  background-color: #282828;
+  color: white;
+}
+
+.search__title {
+  color: white;
+  margin-left: 5px;
+}
+
+@media only screen and (min-width: 651px) {
+  .search-container {
+    top: 100%;
+    width: 40%;
+  }
+}
