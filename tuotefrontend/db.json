@@ -1,0 +1,46 @@
+{
+  "orders": [
+    {
+      "id": 1,
+      "orderdate": "2020-01-10",
+      "client": "Tero Testaaja",
+      "productname": "Football",
+      "pcs": 1
+    },
+    {
+      "id": 2,
+      "orderdate": "2020-01-12",
+      "client": "Alma Medio",
+      "productname": "Basketball",
+      "pcs": 3
+    },
+    {
+      "id": 3,
+      "orderdate": "2020-01-15",
+      "client": "Linda Lampinen",
+      "productname": "Nexus 7",
+      "pcs": 1
+    },
+    {
+      "id": 4,
+      "orderdate": "2020-02-06",
+      "client": "Jaakko Aho",
+      "productname": "Football",
+      "pcs": 1
+    },
+    {
+      "id": 5,
+      "orderdate": "2020-02-08",
+      "client": "Tero Testaaja",
+      "productname": "iPhone 5",
+      "pcs": 1
+    },
+    {
+      "id": 6,
+      "orderdate": "2020-02-10",
+      "client": "Valle Villaton",
+      "productname": "Baseball",
+      "pcs": 2
+    }
+  ]
+}
